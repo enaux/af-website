@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Sometype+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Sometype+Mono:wght@700&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aed03e1cd3.js" crossorigin="anonymous"></script>
     <title>Anaesthesia Focus</title>
 </head>
@@ -17,6 +17,7 @@
 
     <header>
 
+
         <div class="nav-container">
 
             <div id="home-button">
@@ -24,44 +25,46 @@
                     <img src="images/logo-white.jpg" id="af-logo">
                 </a>
             </div>
-            
 
             <nav>
-                <div class="search-bar">
-                    <form action="">
-                        <input type="text" placeholder="SEARCH.." class="search-input">
-                        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-                <a href="pages/about.html" class="nav-link">ABOUT</a>
                 <a href="page/login.html" class="nav-link">LOGIN/SIGN-UP</a>
+                <a href="#exam-syllabus" class="nav-link">SYLLABUS</a>
+                <a href="pages/about.html" class="nav-link">ABOUT</a>
                 <a href="" class="nav-link"><button id="donate-button">DONATE</button></a>
             </nav>
+
         </div>
 
+
         <img src="images/man-in-scrubs.jpg" id="home-img">
+
 
         <a href="#intro-to-mcai">
             <div class="arrow-container">
                 <i class="fa-solid fa-angle-down fa-3x" id="nav-arrow"></i>
             </div>
         </a>
+
+
+        <form action="" id="search-bar">
+            <input type="text" placeholder="SEARCH.." class="search-input">
+            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         
 
     </header>
 
 
+
     <main>
 
-        <!-- Contain all intro content and structure on
-        one page, with added front-end features.
-        Then the educational content can have individual pages-->
 
         <div class="subnav">
             <button class="subnav-button">
                 <i class="fa-regular fa-compass"></i>
             </button>
             <div class="subnav-options">
+                <a href="#home-button">HOME</a>
                 <a href="#intro-to-mcai">INTRO TO MCAI</a>
                 <a href="#exam-syllabus">EXAM SYLLABUS</a>
                 <a href="#anatomy">ANATOMY</a>
@@ -233,17 +236,31 @@
 
 
     <footer>
+
         <div class="footer-columns">
+
             <div class="f-column1">
-                <p>Copyright 2024 Anaesthesia Focus</p>
+                <p id="copyright">Copyright 2024 Anaesthesia Focus</p>
             </div>
+
             <div class="f-column2">
-                <div class="icon-row">
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
+
+                    <a href="https://twitter.com/?lang=en-ie">
+                        <div class="icon">
+                            <i class="fa-brands fa-x-twitter fa-2x" style="text-decoration:none"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/?app">
+                        <div class="icon">
+                            <i class="fa-brands fa-youtube fa-2x" style="text-decoration:none"></i>
+                        </div>
+                    </a>
+
             </div>
+
         </div>
+
     </footer>
 
 
