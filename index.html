@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Sometype+Mono:wght@700&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Sometype+Mono:wght@700&family=Roboto+Mono:wght@300&family=Sixtyfour&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aed03e1cd3.js" crossorigin="anonymous"></script>
     <title>Anaesthesia Focus</title>
 </head>
@@ -60,8 +60,8 @@
 
 
         <div class="subnav">
-            <button class="subnav-button">
-                <i class="fa-regular fa-compass"></i>
+            <button id="compass">
+                <i class="fa-regular fa-compass fa-5x"></i>
             </button>
             <div class="subnav-options">
                 <a href="#home-button">HOME</a>
@@ -78,22 +78,25 @@
         </div>
 
 
-        <div class="section-1">
-            
-        </div>
+        <div class="section" id="intro-to-mcai">
 
-
-        <div class="section-2" id="intro-to-mcai">
             <div class="section-heading">
-                <h2>Intro to MCAI</h2>
+                <h2>INTRO TO MCAI</h2>
             </div>
             <div class="section-body">
                 <p></p>
             </div>
+
+            <a href="#exam-syllabus">
+                <div class="arrow-2">
+                    <i class="fa-solid fa-angle-down fa-3x" id="nav-arrow"></i>
+                </div>
+            </a>
+
         </div>
 
 
-        <div class="section-3" id="exam-syllabus">
+        <div class="section" id="exam-syllabus">
             <div class="section-heading">
                 <h2>Exam Syllabus</h2>
             </div>
@@ -103,7 +106,7 @@
         </div>
 
 
-        <div class="section-4" id="anatomy">
+        <div class="section" id="anatomy">
             <h3>Anatomy</h3>
             <div>
                 <h4>Respiratory</h4>
@@ -195,41 +198,48 @@
         </div>
 
 
-        <div class="section-5" id="pharmacology">
+        <div class="section" id="pharmacology">
             <h3>Pharmacology</h3>
             <p>links</p>
         </div>
         
 
-        <div class="section-6" id="physiology-biochemistry">
+        <div class="section" id="physiology-biochemistry">
             <h3>Physiology & Biochemistry</h3>
             <p>links</p>
         </div>
         
 
-        <div class="section-7" id="physics-equipment-clinical-meaasurement">
+        <div class="section" id="physics-equipment-clinical-meaasurement">
             <h3>Physics, Equipment & Clinical Measurement</h3>
             <p>links</p>
         </div>
         
 
-        <div class="section-8" id="statistical-methods">
+        <div class="section" id="statistical-methods">
             <h3>Statistical Methods</h3>
             <p>links</p>
         </div>
 
 
-        <div class="seection-9" id="recommended-reading">
-            <h3>Recommended Reading</h3>
-
-        </div>
-        
-
-        <div class="section-10" id="practice-questions">
-            <h3>Practice Questions</h3>
+        <div class="section" id="practice-questions">
+            <div class="section-heading">
+                <h3>PRACTICE QUESTIONS</h3>
+            </div>
             <p>sign up for more</p>
         </div>
         
+
+        <div id="reading">
+            <div class="section-heading">
+                <h3>RECOMMENDED READING</h3>
+            </div>
+            <div class="reading-item">
+                <h4>Principles of Physiology for the Anaesthetist</h4>
+                <p>Peter Kam & Ian Power</p>
+                <p>CRC Press</p>
+            </div>
+        </div>
 
 
     </main>
@@ -240,7 +250,7 @@
         <div class="footer-columns">
 
             <div class="f-column1">
-                <p id="copyright">Copyright 2024 Anaesthesia Focus</p>
+                <p id="copyright">Copyright <i class="fa-regular fa-copyright"></i> 2024 Anaesthesia Focus. All rights reserved.</p>
             </div>
 
             <div class="f-column2">

@@ -39,6 +39,10 @@ header {
     flex-basis: auto;
 }
 
+#af-logo:hover {
+    border: 5px solid rgba(50, 223, 142, 0.825);
+}
+
 nav {
     margin-top: 4%;
     margin-right:3%;
@@ -99,14 +103,14 @@ nav {
     border: 20px solid transparent;
 }
 
+#nav-arrow {
+    color: white;
+}
+
 .arrow-container:hover {
     #nav-arrow {
         color: rgba(50, 223, 142, 0.825);
     }
-}
-
-#nav-arrow {
-    color: white;
 }
 
 #search-bar {
@@ -149,17 +153,105 @@ nav {
     border-left: 2px solid #017970;
 }
 
-.section-header {
+
+body {
+    width: 100%;
+    height: 1000vh;
+}
+
+#compass {
+    position: sticky;
+    top: 110vh;
+    right: 5%;
+    padding: 17px;
+    color: #017970;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 55px;
+
+}
+
+
+#donate-button:hover {
+    background-color: white;
+    color: #017970;
+    border: 2px solid #017970;
+}
+
+
+.section {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.section-heading {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 40px;
+    padding: 1% 5%;
+}
+
+
+#intro-to-mcai {
+    background-color: #017970;
+    color: #F4F5EF;
+}
+
+.arrow-2 {
+    position: absolute;
+    right: 7%;
+    bottom: 5%;
+    width: auto;
+    border: 20px solid transparent;
+    border-radius: 10px;
+    justify-content: center;
     align-items: center;
 }
 
+.arrow-2:hover {
+    #nav-arrow {
+        color: black;
+    }
+}
+
+
+#reading {
+    position: absolute;
+    margin: 0;
+    top: 900vh;
+    width: 100%;
+    height: 75vh;
+    padding: 0 5%;
+    background-color: #1d2228;
+    color: #F4F5EF;
+}
+
+
+
+.reading-item {
+    width: 25%;
+    height: 20%;
+    border-bottom: 2px dashed #F4F5EF;
+
+}
+
+
+
+
 footer {
     position: absolute;
+    top: 977vh;
     width: 100%;
-    height: 25%;
+    height: 25vh;
     padding: 0 4% 2% 4%;
     background-color: #017970;
-    color: white;
+    color: #F4F5EF;
     font-family: 'Roboto Mono', monospace;
     align-items: baseline;
 }
@@ -178,10 +270,6 @@ footer {
     justify-content: flex-end;
     height:100%;
     font-size: 25px;
-}
-
-#copyright {
-
 }
 
 .f-column2 {
