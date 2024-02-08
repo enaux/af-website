@@ -1,0 +1,25 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: darkgray;
+    color: #1d2228;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Sometype Mono', monospace;
+}
+
+a {
+    font-family: 'Baloo 2', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: #1d2228;
+}
+
+
