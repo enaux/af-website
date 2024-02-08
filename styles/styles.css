@@ -10,15 +10,20 @@ h1, h2, h3, h4 {
 a {
     font-family: 'Baloo 2', sans-serif;
     text-decoration: none;
+    display: block;
 }
 
 
 header {
     position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .nav-container {
     position: absolute;
+    margin: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,6 +33,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* need to add responsive switch to justify center */
 }
 
 #af-logo {
@@ -89,28 +95,25 @@ nav {
 }
 
 #home-img {
+    margin: 0;
+    border-bottom: 2vh solid #017970;
     width: 100%;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
 }
 
-.arrow-container {
+.arrow-container, .arrow-2 {
     position: absolute;
     margin: auto;
     left: 46%;
     top: 85%;
     border: 20px solid transparent;
-}
-
-#nav-arrow {
     color: white;
 }
 
 .arrow-container:hover {
-    #nav-arrow {
-        color: rgba(50, 223, 142, 0.825);
-    }
+    color: rgba(50, 223, 142, 0.825);
 }
 
 #search-bar {
@@ -154,42 +157,137 @@ nav {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
+    margin: 0;
     width: 100%;
-    height: 1000vh;
+    border: 1px solid transparent;
+    background-color: #293038;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subnav {
+    position: sticky;
+    top: 2%;
+    left: 1%;
+    width: 7%;
+    border-radius: 55px;
+}
+
+.subnav:hover {
+    .subnav-menu {
+        position: absolute;
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 5px;
+    }
+    #compass {
+        border: 4px solid rgba(50, 223, 142);
+        color: rgba(50, 223, 142);
+    }
+}
+
+.subnav-menu {
+    display: none;
+    background-color: #F4F5EF;
+    margin: 0;
 }
 
 #compass {
-    position: sticky;
-    top: 110vh;
-    right: 5%;
-    padding: 17px;
+    position: absolute;
+    padding: 10px;
     color: #017970;
-    background-color: white;
-    border: 2px solid white;
+    background-color: #F4F5EF;
     border-radius: 55px;
-
+    border:2px solid grey;
 }
 
-
-#donate-button:hover {
-    background-color: white;
+.subnav-link {
+    padding: 17px 20px;
+    border-bottom: 4px solid #017970;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 1.2vw;
+    font-weight: 200;
     color: #017970;
-    border: 2px solid #017970;
+    text-align: center;
+}
+
+.subnav-link:last-of-type {
+    border-bottom: none;
+}
+
+.subnav-link:hover {
+    color:#F4F5EF;
+    background-color: #017970;
+}
+
+.subnav-link:first-of-type:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.subnav-link:last-of-type:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
-.section {
-    position: relative;
-    display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section, .unit-section {
     margin: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding: 0 5%;
+    border-bottom: 4px dashed #1d2228;
 }
 
 .section-heading {
-    position: relative;
     margin: auto;
     text-align: center;
     font-family: 'Sixtyfour', sans-serif;
@@ -198,33 +296,123 @@ body {
 }
 
 
-#intro-to-mcai {
+.unit-heading {
+    border: 1px solid black;
+    padding: 2% 0 2% 4%;
+    font-size: 2vw;
+}
+
+.unit-container {
+    margin: -3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sub-unit {
+    border: 1px solid black;
+    
+}
+
+.link-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sub-unit a {
+    color: white;
+    padding: 1%;
+    font-size: 1.2vw;
+}
+
+.sub-unit a:hover {
+    color: #017970;
+}
+
+
+
+
+
+
+
+
+
+
+
+#intro-to-mcai, #practice-questions {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5%;
     background-color: #017970;
     color: #F4F5EF;
 }
 
+#practice-questions {
+    background-color: rgb(20, 149, 234);
+}
+
 .arrow-2 {
-    position: absolute;
-    right: 7%;
-    bottom: 5%;
-    width: auto;
-    border: 20px solid transparent;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 54%;
+    margin-left: 0;
 }
 
 .arrow-2:hover {
-    #nav-arrow {
-        color: black;
-    }
+    color: black;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #reading {
-    position: absolute;
     margin: 0;
-    top: 900vh;
     width: 100%;
     height: 75vh;
     padding: 0 5%;
@@ -244,9 +432,9 @@ body {
 
 
 
+
+
 footer {
-    position: absolute;
-    top: 977vh;
     width: 100%;
     height: 25vh;
     padding: 0 4% 2% 4%;
@@ -306,3 +494,24 @@ footer {
     background-color: #F4F5EF;
     border: 4px solid #1d2228;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design subnav
+@media (min-height: 300px) {
+    .subnav {
+      position: sticky;
+      top: 0;
+    }
+}
+*/

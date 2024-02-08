@@ -1,0 +1,16 @@
+body {
+    background-color:rgb(17, 31, 73);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2vw;
+  
+}
+
+#content-container {
+    margin-top: 40vh;
+}
+
+h1 {
+    text-align: center;
+    font-stretch: expanded;
+}
