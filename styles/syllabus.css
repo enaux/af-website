@@ -1,32 +1,35 @@
 .unit-section {
-    margin: 0;
+    margin: -3%;
+    top: 0;
     width: 100vw;
-    padding: 0 5%;
-    border: 4px solid black;
+    padding: 0 8%;
     
 }
 
+.heading-container {
+    width: 100vw;
+    height: 20vh;
+}
+
 .unit-heading {
-    margin: 1%;
-    padding: 1% 0 2% 4%;
+    position: absolute;
+    right: 0;
+    margin: 4% 3% 0 0;
+    width: 50%;
+    padding: 0 0 1% 0;
     text-align: end;
-    font-size: 6vw;
 }
 
-.unit-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: 2px solid blue;
-}
 
-.sub-unit {
-    border: 1px solid black;
+.sub-heading {
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-size: 2.4vw;
 }
 
 .link-container {
-    width: 45%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,13 +37,32 @@
 
 .sub-unit a {
     padding: 1%;
-    font-size: 0.8vw;
+    font-size: 1.5vw;
 }
 
 .sub-unit a:hover {
     color: #017970;
 }
 
+.sub-unit {
+    padding-bottom: 4%;
+    border-bottom: 4px dashed #1d2228;
+}
+
+
+.sub-unit:last-of-type {
+    padding-bottom: 6%;
+    border-bottom: none;
+}
+
+
+
 #practice-questions {
+    height: 75vh;
     background-color: rgb(20, 149, 234);
+    padding: 2% 5%;
+}
+
+.section-heading {
+    margin-left: 20%;
 }
