@@ -99,7 +99,6 @@ main {
 }
 
 img {
-
     height: 100%;
     display: block;
     margin: auto;
@@ -115,11 +114,12 @@ img {
     width: 35vw;
     float: right;
     padding: 2vw 2vw;
+    background-color: #F4F5EF;
 }
 
 .about-text p {
     padding: 1vw 0;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 
 }
 
@@ -130,12 +130,15 @@ img {
 
 #disclaimer {
     padding-top: 10vw;
+    padding-bottom: 2vw;;
     font-family: 'Roboto Mono', monospace;
 }
 
 footer {
-    position: absolute;
-    top: inherit;
+    display:inline-block;
+    position: relative;
+    bottom:0;
+    margin:0;
 }
 
 .f-donate {
