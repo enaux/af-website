@@ -1,6 +1,7 @@
 footer {
-    width: 100%;
-    height: 25vh;
+    margin: 0;
+    width: 100vw;
+    height: 15vw;
     padding: 0 4% 2% 4%;
     background-color: #017970;
     color: #F4F5EF;
@@ -21,7 +22,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     height:100%;
-    font-size: 25px;
+    font-size: 1.7vw;
 }
 
 .f-column2 {
@@ -35,16 +36,21 @@ footer {
     padding: 20px 0 20px 0;
 }
 
+.f-column2 a {
+    text-decoration: none;
+}
+
 .icon-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     height: 100%;
-    width: 40%;
+    width: 40vw;
 }
 
 .icon {
-    width: 76px;
-    height: 76px;
+    width: 5vw;
+    height: 5vw;
     display: flex;
     background-color: #1d2228;
     border-radius: 38px;
@@ -53,8 +59,34 @@ footer {
     color: #F4F5EF;
 }
 
+.icon #small {
+    display: none;
+}
+
 .icon:hover {
     color: #1d2228;
     background-color: #F4F5EF;
     border: 4px solid #1d2228;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .icon {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 38px;
+    }
+    .icon #normal {
+        display: none;
+    }
+    .icon #small {
+        display: inline;
+    }
+    .icon:hover {
+        color: #1d2228;
+        background-color: #F4F5EF;
+        border: 2px solid #1d2228;
+    }
 }

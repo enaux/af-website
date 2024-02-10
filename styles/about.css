@@ -1,0 +1,147 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    border-top: 1vw solid #F4F5EF;
+    border-bottom: 2vw solid #F4F5EF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F4F5EF;
+}
+
+nav {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 25px;
+    font-weight: 10em;
+    text-decoration: overline;
+    padding-right: 5vw;
+}
+
+.nav-link:hover {
+    color: rgba(50, 223, 142, 0.825);
+}
+
+#donate-button {
+
+    padding: 15px 25px;
+    color: white;
+    background-color: #017970;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 25px;
+    font-weight: 10em;
+}
+
+#donate-button:hover {
+    background-color: white;
+    color: #017970;
+    border: 2px solid #017970;
+}
+
+
+
+
+
+
+
+main {
+    position: static;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 50vw;
+    background-color: #F4F5EF;
+    font-family: 'Baloo 2', sans-serif;
+
+}
+
+
+#background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65vw;
+}
+
+
+
+
+
+
+#img-div {
+    position: relative;
+    box-sizing: content-box;
+    width: 100vw;
+    height: 15vw;
+    background-color: #017970;
+    border-top: 1vw solid rgba(50, 223, 142, 0.825);
+    border-bottom: 1vw solid rgba(50, 223, 142, 0.825);
+}
+
+img {
+
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+#about-img {
+    width: 100%;
+}
+
+.about-text {
+    position: relative;
+    width: 35vw;
+    float: right;
+    padding: 2vw 2vw;
+}
+
+.about-text p {
+    padding: 1vw 0;
+    font-size: 1.5vw;
+
+}
+
+#welcome-message {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#disclaimer {
+    padding-top: 10vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer {
+    position: absolute;
+    top: inherit;
+}
+
+.f-donate {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4%;
+    font-size: 1.2vw;
+}

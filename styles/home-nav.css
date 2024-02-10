@@ -15,7 +15,7 @@
 
 #af-logo {
     margin: 10% 10%;
-    width: 550px;
+    width: 36vw;
     height: auto;
     border: 5px solid #017970;
     border-radius: 20px;
@@ -31,7 +31,7 @@ nav {
     margin-right:3%;
     top: 8%;
     right:0;
-    width: 700px;
+    width: 45vw;
     height:20%;
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@ nav {
 .nav-link {
     color: black;
     font-family: 'Sometype Mono', monospace;
-    font-size: 25px;
+    font-size: 1.6vw;
     font-weight: 10em;
     text-decoration: overline;
 }
